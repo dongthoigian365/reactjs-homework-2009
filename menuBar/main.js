@@ -1,4 +1,4 @@
-var nav = [
+const menu = [
   {
     name: 'Home',
     children: [
@@ -76,17 +76,17 @@ var nav = [
   }
 ]
 
-const menu = [];
+const nav = [];
 
 (function build(elements) {
-  menu.push('<ul>');
+  nav.push('<ul>');
   $.each(elements, function (i, val) {
-    menu.push('<li><a href="">', val.name);
+    nav.push('<li><a href="">', val.name);
     build(val.children);
-    menu.push('</a></li>');
+    nav.push('</a></li>');
   });
-  menu.push('</ul>');
-}(nav));
+  nav.push('</ul>');
+}(menu));
 
-const string = menu.toString().replaceAll(',', '')
+const string = nav.toString().replaceAll(',', '')
 document.write(string)
