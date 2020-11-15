@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {    
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    color: white;
+}
+
+.mainmenu {
+    margin-top: 30px;
+    margin-left: 50px;
+    background: #2a394f;
+    width: 450px;
+    display: block;    
+    border-radius: 5px;
+}
+
+.mainmenu > li > div {
+    padding-left: 50px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    cursor: pointer;
+}
+
+.mainmenu > li:nth-of-type(1) div:hover {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.mainmenu > li:nth-of-type(1) div:hover,
+.mainmenu > li:nth-of-type(2) div:hover,
+.mainmenu > li:nth-of-type(3) div:hover,
+.mainmenu > li:nth-of-type(4) div:hover {
+    background: #222e41;
+    border-bottom: 3px solid #355789;
+}
+
+.mainmenu li > div {
+    display: block;
+    position: relative;
+}
+
+.mainmenu li > div > a {
+    padding-left: 28px;
+}
+
+.mainmenu li > div > span.fas.fa-chevron-down {
+    display: block;
+    position: absolute;
+    right: 51px;
+    bottom: 50px;
+    transform: rotate(-90deg);
+}
+
+.mainmenu li > a {
+    padding-left: 28px;
+}
+
+.mainmenu > li:nth-of-type(2),
+.mainmenu > li:nth-of-type(3),
+.mainmenu > li:nth-of-type(4) {
+    border-top: 1px solid #2a3649;
+    border-bottom: 1px solid #2a3649;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu li {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    cursor: pointer;
+    background: #16a4f9;
+    padding-left: 20px;
+}
+
+.submenu li:hover {
+    background: #0c93e3;
+    border-left: 5px solid #146ca1;
+}

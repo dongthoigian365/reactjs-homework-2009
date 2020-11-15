@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eeeeee;
+}
+
+ul {
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    color: #777777;
+    font-size: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: #777777;
+}
+
+p {
+    font-size: 16px;
+    font-weight: none;
+    color: #777777;
+}
+
+.rectangle {
+    height: 108px;
+    width: 8px;
+    background: #e57d23;
+}
+
+body > ul {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #ffffff;
+    width: 400px;
+    display: block;
+    position: relative;
+}
+
+body > ul > li {
+    height: 80px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    cursor: pointer;
+    padding-left: 40px;
+    padding-top: 28px;
+    display: flex;
+}
+
+body > ul > li > div > a {
+    text-transform: uppercase;
+}
+
+body ul li.active {
+    position: relative;
+}
+
+body ul li.active .shape .left .rectangle {
+    position: absolute;
+    top: 1px;
+    left: -8px;
+}
+
+body ul li.active .shape .left .triangle {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 12px solid #e57d23;
+    border-bottom: 12px solid transparent;
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+body ul li.active .shape .right .rectangle {
+    position: absolute;
+    top: 0;
+    right: -8px;
+}
+
+body ul li.active .shape .right .triangle {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 12px solid  #e57d23;
+    border-bottom: 12px solid transparent;
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+body > ul > li > form > input {
+    height: 64px;
+    width: 274px;
+    font-size: 20px;
+    padding-left: 20px;
+    border: 1px solid #eeeeee;
+}
+
+body > ul > li > form > button {
+    height: 64px;
+    width: 78px;
+    border: 1px solid transparent;
+    background: #e57d23;
+    cursor: pointer;
+    position: absolute;
+}
+
+body > ul > li > form > button > span {
+    font-size: 25px;
+    color: white;
+}
+
+body > ul > li:hover > form > button > span {
+    color: white;
+}
+
+body > ul > li > div {
+    padding-left: 20px;
+}
+
+ul > li:hover > div > a,
+ul > li:hover > div > p,
+ul > li:hover > span {
+    color: #e57d23;
+}
+
+body > ul > li {
+    position: relative;
+}
+
+body > ul > li > .right {
+    display: none;
+}
+
+body > ul > li > ul {
+    display: none;
+    position: absolute;
+    left: 102%;
+    top: 0;
+}
+
+body > ul > li:hover > .right,
+body > ul > li:hover > ul {
+    display: block;
+}
+
+body > ul > li:hover > ul > li:hover > a {
+    color: #e57d23;
+}
+
+body > ul > li:nth-of-type(5) > .right > .rectangle {
+    width: 8px;
+    height: 298px;
+    position: absolute;
+    top: 0;
+    right: -8px;
+}
+
+body > ul > li:nth-of-type(5) > .right > .triangle {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 12px solid  #e57d23;
+    border-bottom: 12px solid transparent;
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+body > ul > li > ul > li {
+    width: 160%;
+    height: 53px;
+    padding-left: 30px;
+    background: #ffffff;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    padding-top: 19px;
+}
+
+body ul li ul li div.right {
+    display: none;
+}
+
+body > ul > li > ul > li > ul {
+    display: none;
+    position: absolute;
+    left: 103%;
+    top: 0;
+}
+
+body ul li ul li:hover div.right,
+body ul li ul li:hover ul {
+    display: block;
+}
+
+body ul li ul li:hover > a {
+    color: #e57d23;
+}
+
+body > ul > li > ul > li > ul > li {
+    width: 200%;
+    height: 53px;
+    padding-left: 30px;
+    background: #ffffff;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    padding-top: 19px;
+}
+
+body ul li ul li:nth-of-type(2) {
+    position: relative;
+}
+
+body ul li ul li div.right div.rectangle {
+    width: 8px;
+    height: 224px;
+    position: absolute;
+    top: 0;
+    right: -8px;
+}
+
+body ul li ul li div.right div.triangle {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 12px solid  #e57d23;
+    border-bottom: 12px solid transparent;
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+body ul li ul li ul li:nth-of-type(2) div.right {
+    display: none;
+}
+
+body > ul > li > ul > li > ul > li:nth-of-type(2) > ul {
+    display: none;
+}
+
+body ul li ul li ul li:nth-of-type(2):hover div.right,
+body ul li ul li ul li:nth-of-type(2):hover ul {
+    display: block;
+}
+
+body > ul > li > ul > li > ul > li > ul {
+    position: absolute;
+    left: 103%;
+    top: 0;
+}
+
+body > ul > li > ul > li > ul > li > ul > li {
+    width: 200%;
+    height: 53px;
+    padding-left: 30px;
+    background: #ffffff;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    padding-top: 19px;
+}
+
+body ul li ul li ul li div.right div.rectangle {
+    width: 8px;
+    height: 147px;
+    position: absolute;
+    top: 0;
+    right: -8px;
+}
+
+body ul li ul li ul li div.right div.triangle {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 12px solid  #e57d23;
+    border-bottom: 12px solid transparent;
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
